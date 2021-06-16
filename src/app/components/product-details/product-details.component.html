@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{product.sku}}</mat-card-title>
+    <mat-card-subtitle>{{product.name}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{product.imageUrl}}" class="image-size">
+  <mat-card-content>
+   <p>
+      {{product.description}}
+    </p>
+     <p>
+      {{product.unitsInStock}}
+    </p>
+   	<p style="color:blue">{{product.unitPrice | currency : 'USD'}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="addToCart(product)" mat-raised-button>Add to Cart</button>
+    <a routerLink="/products" mat-raised-button>Back to Products page</a>
+  </mat-card-actions>
+</mat-card>

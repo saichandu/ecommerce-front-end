@@ -1,0 +1,15 @@
+<div class="float-container">
+	<div class="float-child1">
+		<mat-form-field class="search">
+		    <mat-label style="color:white;font-weight:italic">Search the product here...</mat-label>
+		    <input #searchInput matInput placeholder="Ex. Book" style="color:yellow;"
+		    	(keyup.enter)= "doSearch(searchInput.value)"/>
+		</mat-form-field>
+	</div>
+	<div class="float-child2">
+		<app-cart-status></app-cart-status>
+	</div>
+	<div class="float-child3">
+		<app-login-status></app-login-status>
+	</div>
+</div>

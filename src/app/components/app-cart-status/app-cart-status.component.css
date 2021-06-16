@@ -1,0 +1,34 @@
+.total {
+	background: #06121c;
+	line-height: 30px;
+	color: #fff;
+	border-radius: 30px;
+	border: 1px solid #06121c;
+	float: left;
+	margin-top: 10px;
+	padding-left: 12px;
+}
+
+.cart-area{
+    display:block;
+}
+
+.child1{
+    display:inline-block;
+    background:#fff;
+    padding:0 13px;
+    color:#000;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border:1px solid #163f62
+}
+
+.child2{
+    display:inline-block;
+    background:#fff;
+    padding:0 13px;
+    color:#000;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    border:1px solid #163f62
+}

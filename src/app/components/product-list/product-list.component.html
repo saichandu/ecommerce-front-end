@@ -1,0 +1,22 @@
+<mat-grid-list cols="3" style="background-color:light-grey;" rowHeight="3:2">
+	<ng-container *ngIf="products.length>0; else noresults">
+		<mat-grid-tile *ngFor="let row of products">
+			<table>
+				<tr>
+					<td style="background-color:grey;border-radius:2px;color:white;">
+						<p>{{row.name}}</p>
+					</td>
+				</tr>
+				<tr>
+					<a routerLink="/product/{{row.id}}"><img src="{{row.imageUrl}}"
+						style="width:60%;height:60%"></a>
+				</tr>
+			</table>
+		</mat-grid-tile>
+	</ng-container>
+	<ng-template #noresults>
+		<mat-grid-tile>
+			<p>No results found</p>
+		</mat-grid-tile>
+	</ng-template>
+</mat-grid-list>

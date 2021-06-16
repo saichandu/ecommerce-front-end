@@ -1,0 +1,29 @@
+
+.float-container {
+	background-color: #163f62
+}
+
+.float-child1 {
+    width: 45%;
+    float: left;
+    height: 57px;
+}
+
+.float-child2 {
+    width: 15%;
+    float: left;
+    background-color: #163f62;
+    height: 57px;
+}
+
+.float-child3 {
+    width: 40%;
+    float: left;
+    background-color: #163f62;
+    height: 57px;
+}
+
+.search {
+	width: 100%; 
+	background: #163f62;
+}
